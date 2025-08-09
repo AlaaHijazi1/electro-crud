@@ -1,0 +1,23 @@
+.bi-box-seam {
+  background-color: #0f172a;
+  border-radius: 50%;
+  margin-right: 10px;
+  padding: 10px 15px;
+}
+
+.titles {
+  min-height: 100px;
+}
+
+.cards.row {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 1081px) {
+  .cards.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

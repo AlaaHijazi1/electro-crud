@@ -1,0 +1,14 @@
+label {
+  font-size: 15px;
+}
+
+input,
+select {
+  border-radius: 10px;
+  border: 1px solid rgba(128, 128, 128, 0.411);
+}
+
+.colored-toast {
+  color: black !important;
+  font-weight: bold;
+}

@@ -1,0 +1,42 @@
+.category small {
+  background-color: rgba(206, 203, 203, 0.37);
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+.Actions {
+  width: 80px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bi-pencil-square {
+  padding: 5px;
+  border-radius: 5px;
+}
+.bi-trash {
+  padding: 5px;
+  border-radius: 5px;
+  color: red;
+}
+.bi-pencil-square:hover,
+.bi-trash:hover {
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: rgba(207, 205, 205, 0.568);
+}
+
+.quantity p {
+  border: 1px solid rgba(207, 205, 205, 0.568);
+  border-radius: 15px;
+  padding: 0 10px;
+}
+
+.bi-star-fill {
+  color: #fbc32f;
+}
+.bi-star {
+  color: gray;
+}

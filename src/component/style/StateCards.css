@@ -1,0 +1,15 @@
+.Card {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background-color: white;
+  border-radius: 5px;
+  width: 350px !important;
+  box-shadow: 0 0 2px gray;
+}
+.bi-cart {
+  color: #3b82f6;
+}
+.bi-graph-up {
+  color: #f97316;
+}
