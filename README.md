@@ -9,7 +9,7 @@ A simple and user-friendly React application for managing electronic products wi
 
 ##Built With
 
--React(Vite)
--Context API (for state management)
--CSS (for styling)
--Bootstrap (for responsive design and components)
+- React(Vite)
+- Context API (for state management)
+- CSS (for styling)
+- Bootstrap (for responsive design)
