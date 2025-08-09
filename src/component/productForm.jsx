@@ -35,12 +35,6 @@ function ProductForm() {
         quantity,
         rating,
       };
-      // setProducts(product) :  Here is wrong to do this because it replaces the products:
-      // The correct way is:
-      // Get all the old products and add the new one to them.
-      // So, when you change the products here, the useEffect inside the provider
-      // will detect the change and immediately run,
-      // storing the updated products accordingly.
       setProducts([...products, product]);
       setOrginalProducts([...products, product]);
       const Toast = Swal.mixin({
@@ -52,7 +46,7 @@ function ProductForm() {
         iconHtml:
           '<i class="bi bi-check-circle-fill" style="color: black; font-size: 20px;"></i>',
         customClass: {
-          popup: "colored-toast", // We use it to modify the font
+          popup: "colored-toast",
         },
         didOpen: (toast) => {
           toast.onmouseenter = Swal.stopTimer;
@@ -69,7 +63,6 @@ function ProductForm() {
           // You must return a new object with the rest of the product's properties plus the updates
           return {
             ...product,
-            // The new values
             name,
             category,
             price,
@@ -159,8 +152,6 @@ function ProductForm() {
           min={1}
           required
           onChange={(e) => {
-            // The value returned from e.target.value is a string
-            // that's why we need to convert it to a number
             setPrice(+e.target.value);
           }}
         />

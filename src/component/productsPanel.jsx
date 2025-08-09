@@ -7,9 +7,6 @@ import { useContext } from "react";
 import Swal from "sweetalert2";
 
 function ProductsPanel() {
-  // No need to fetch products from localStorage here because in the provider,
-  // any update modifies the state directly,
-  // so the products remain consistent and display normally here.
   const {
     products,
     setProducts,
@@ -20,7 +17,6 @@ function ProductsPanel() {
   } = useContext(productsContext);
 
   const serchProducts = (value) => {
-    console.log(orginalProducts);
     if (!value) {
       setProducts(orginalProducts);
       return;
@@ -93,8 +89,8 @@ function ProductsPanel() {
           {products.length > 0 ? (
             products.map((item) => (
               <ProductCard
-                key={item.Id} // The key is not passed as a prop; it is used internally by React only
-                id={item.Id} // The 'id' prop is used for delete and edit operations
+                key={item.Id}
+                id={item.Id}
                 name={item.name}
                 price={item.price}
                 category={item.category}
@@ -103,7 +99,6 @@ function ProductsPanel() {
               />
             ))
           ) : (
-            // a message that appears when there are no products
             <p className="text-center w-100">No products available.</p>
           )}
         </div>
